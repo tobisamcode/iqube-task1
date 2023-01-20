@@ -1,0 +1,38 @@
+.tab-headings,
+.tab-headings-billing {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.tab-headings-single {
+  padding: 30px 0;
+}
+
+.tab-headings-single h5 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #bdbdbd;
+}
+
+.tab-active {
+  color: #f2994a !important;
+}
+
+.tab-headings::after,
+.tab-headings-billing::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  background: #f2994a;
+  border-radius: 10px;
+  bottom: -6.5px;
+  height: 13px;
+  width: 26%;
+}
+
+.tab-headings-billing::after {
+  left: 34.5%;
+}
